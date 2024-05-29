@@ -4,3 +4,8 @@ on:
   pull_request:
     types: ['opened', 'edited', 'reopened', 'synchronize']
 
+  workflow_dispatch:
+    inputs:
+      sut:
+        description: 'Try own pipeline'
+        required: true
